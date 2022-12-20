@@ -9,13 +9,16 @@
  
 ![](final-p1.png)
 
-### W15-P2: add video banner
+### final-P2: hero img
  
-![](w15-p2.png)
+![](final-p2-1.png)
+![](final-p2-2.png)
 
 
 
 ```
 $ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-12-19"
+b5e74a8 George0113      Tue Dec 20 17:11:49 2022 +0800  logo
+d172a02 George0113      Tue Dec 20 09:53:22 2022 +0800  logo
 
 ```
