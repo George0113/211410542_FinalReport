@@ -35,6 +35,12 @@ Navbar
         color: var(--clr-primary-5);
         cursor: pointer; //游標移到這邊換成手指圖案
     }
+
+    &-logo{
+        height: 4rem;
+        padding: 0.5rem;
+        padding-left: 0.5rem;
+    }
 }
 
 .navbar-fixed {

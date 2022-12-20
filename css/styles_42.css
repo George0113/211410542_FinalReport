@@ -129,9 +129,9 @@ p {
     font-size: 1rem;
   }
   h1,
-h2,
-h3,
-h4 {
+  h2,
+  h3,
+  h4 {
     line-height: 1;
   }
 }
@@ -236,6 +236,11 @@ Navbar
   background-color: transparent;
   color: var(--clr-primary-5);
   cursor: pointer;
+}
+.nav-logo {
+  height: 4rem;
+  padding: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .navbar-fixed {
@@ -747,4 +752,4 @@ timeline
   color: var(--clr-primary-1);
 }
 
-/*# sourceMappingURL=styles_65.css.map */
+/*# sourceMappingURL=styles_42.css.map */
