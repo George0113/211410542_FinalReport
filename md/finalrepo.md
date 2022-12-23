@@ -18,6 +18,7 @@
 
 ```
 $ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-12-19"
+76660af George0113      Tue Dec 20 17:24:06 2022 +0800  hero img
 b5e74a8 George0113      Tue Dec 20 17:11:49 2022 +0800  logo
 d172a02 George0113      Tue Dec 20 09:53:22 2022 +0800  logo
 
