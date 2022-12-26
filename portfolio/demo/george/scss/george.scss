@@ -1,0 +1,175 @@
+@use '_global_geo';
+/*
+============
+Mixin classes
+============
+*/
+@mixin picture($width, $height) {
+    display: block;
+    border-radius: 5%;
+    object-fit: cover;
+    max-width: $width;
+    max-height: $height;
+}
+/*
+============
+Navbar
+============
+*/
+.navbar {
+    //z-index:5;
+    background-color: var(--background--clr);
+    // border: 1px solid;
+    height: 60px;
+    padding: 0 15px;
+    line-height: 60px;
+    &Fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    .container {
+        max-width: var(--max-width);
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap :1.5rem;
+        span {
+            // display: none;
+            font-size: 20px;
+            font-weight: 400;
+            opacity: 50%;
+        }
+    }
+    .logo {
+        display: flex;
+        // width: 140px;
+        // height: 40px;
+        background-size: cover;
+        img {
+            object-fit: cover;
+            display: block;
+            width: 5%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+.mainPage {
+    margin-top: 5rem;
+    .pageCenter {
+        min-height:calc(100vh - 4rem);
+        display: grid;
+        place-items: center;
+        // border: 1px solid;
+    }
+    .searchBar {
+        box-sizing: border-box;
+        // border: 1px solid;
+    }
+    .sortList {
+        display:block;
+        text-align: center;
+        line-height: 1.5;
+        lists {
+            width: 340px;
+        }
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .controlBarContainer {
+        display: none;
+    }
+    .indexContainer {
+        display: grid;
+        gap: 1.5rem;
+        .commodity {
+            // border: 1px solid #333;
+            display: block;
+            color: var(--text-clr);
+            padding: 0.5rem;
+            transition: var(--trans-pic);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            img {
+                @include picture(12rem,30rem);
+            }
+            .commodityContent p {
+                color: var(--text-clr-light);
+            }
+            &:hover {
+                box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            }
+        }
+    }
+}
+.sidebar {
+    //z-index:4;
+    position: fixed;
+    top: 0;
+    left:0;
+    width:80%;
+    height:100%;
+    display: grid;
+    // justify-content: center;
+    align-items: center;
+    // color: var(--background--clr-light);
+    background-color: var(--background--clr-light);
+    border: 2px solid;
+    z-index:4;
+    transition: var(--trans-bar);
+    // transform: translateX(-100%);
+    .navigation {
+        background-color: var(--background--clr-dark);
+    }
+
+    &-center{
+        display: flex;
+    }
+    &-navigation{
+        display: none;
+    }
+    &-categories{
+        display: none;
+    }
+    &-account{
+        display: none;
+    }
+    &-otherSettings{
+        display: none;
+    }
+}
+
+.show-sidebar{
+    transform: translateX(0);
+}
+
+/*
+===========
+RWD Part.
+===========
+*/
+@media screen and (min-width: 450px) {
+   .indexContainer {
+    grid-template-columns: repeat(2, minmax(13rem,1fr));
+   }
+}
+@media screen and (min-width: 768px) {
+   .indexContainer {
+    grid-template-columns: repeat(3, minmax(13rem,1fr));
+   }
+}
+@media screen and (min-width: 992px) {
+   .indexContainer {
+    grid-template-columns: repeat(4, minmax(13rem,1fr));
+   }
+}

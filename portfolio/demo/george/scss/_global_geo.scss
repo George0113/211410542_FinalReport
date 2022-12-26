@@ -1,0 +1,32 @@
+/*
+==========
+Global
+==========
+*/
+:root {
+    --border--clr:#aaa;
+    --background--clr:#fff;
+    --background-clr-dark:#121456;
+    --background-clr-light:#ababab;
+    --text-clr: #333;
+    --text-clr-light: rgb(115, 115, 115);
+    --max-width: 1170px;
+    //transition
+    --trans-pic: 0.25s ease-in-out all;
+    --trans-bar: all 0.3s linear;
+}
+/*
+==========
+Body
+==========
+*/
+body {
+    background-color: var(--background--clr);
+    font-size: 14px;
+}
+
+a   {
+    display: block;
+    color: var(--text-clr);
+    text-decoration: none;
+}

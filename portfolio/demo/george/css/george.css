@@ -1,0 +1,195 @@
+/*
+==========
+Global
+==========
+*/
+:root {
+  --border--clr:#aaa;
+  --background--clr:#fff;
+  --background-clr-dark:#121456;
+  --background-clr-light:#ababab;
+  --text-clr: #333;
+  --text-clr-light: rgb(115, 115, 115);
+  --max-width: 1170px;
+  --trans-pic: 0.25s ease-in-out all;
+  --trans-bar: all 0.3s linear;
+}
+
+/*
+==========
+Body
+==========
+*/
+body {
+  background-color: var(--background--clr);
+  font-size: 14px;
+}
+
+a {
+  display: block;
+  color: var(--text-clr);
+  text-decoration: none;
+}
+
+/*
+============
+Mixin classes
+============
+*/
+/*
+============
+Navbar
+============
+*/
+.navbar {
+  background-color: var(--background--clr);
+  height: 60px;
+  padding: 0 15px;
+  line-height: 60px;
+}
+.navbarFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+.navbar .container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.navbar .buttons span {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 50%;
+}
+.navbar .logo {
+  display: flex;
+  background-size: cover;
+}
+.navbar .logo img {
+  object-fit: cover;
+  display: block;
+  width: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainPage {
+  margin-top: 5rem;
+}
+.mainPage .pageCenter {
+  min-height: calc(100vh - 4rem);
+  display: grid;
+  place-items: center;
+}
+.mainPage .searchBar {
+  box-sizing: border-box;
+}
+.mainPage .sortList {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mainPage .sortList lists {
+  width: 340px;
+}
+.mainPage .controlBarContainer {
+  display: none;
+}
+.mainPage .indexContainer {
+  display: grid;
+  gap: 1.5rem;
+}
+.mainPage .indexContainer .commodity {
+  display: block;
+  color: var(--text-clr);
+  padding: 0.5rem;
+  transition: var(--trans-pic);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.mainPage .indexContainer .commodity img {
+  display: block;
+  border-radius: 5%;
+  object-fit: cover;
+  max-width: 12rem;
+  max-height: 30rem;
+}
+.mainPage .indexContainer .commodity .commodityContent p {
+  color: var(--text-clr-light);
+}
+.mainPage .indexContainer .commodity:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  background-color: var(--background--clr-light);
+  border: 2px solid;
+  z-index: 4;
+  transition: var(--trans-bar);
+}
+.sidebar .navigation {
+  background-color: var(--background--clr-dark);
+}
+.sidebar-center {
+  display: flex;
+}
+.sidebar-navigation {
+  display: none;
+}
+.sidebar-categories {
+  display: none;
+}
+.sidebar-account {
+  display: none;
+}
+.sidebar-otherSettings {
+  display: none;
+}
+
+.show-sidebar {
+  transform: translateX(0);
+}
+
+/*
+===========
+RWD Part.
+===========
+*/
+@media screen and (min-width: 450px) {
+  .indexContainer {
+    grid-template-columns: repeat(2, minmax(13rem, 1fr));
+  }
+}
+@media screen and (min-width: 768px) {
+  .indexContainer {
+    grid-template-columns: repeat(3, minmax(13rem, 1fr));
+  }
+}
+@media screen and (min-width: 992px) {
+  .indexContainer {
+    grid-template-columns: repeat(4, minmax(13rem, 1fr));
+  }
+}
+
+/*# sourceMappingURL=george.css.map */

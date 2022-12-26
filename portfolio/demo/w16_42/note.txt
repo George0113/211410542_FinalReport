@@ -1,0 +1,3 @@
+sass  --watch demo/w16_42_portfolio/scss:demo/w16_42_portfolio/css
+
+sass  --watch demo/w6_42/scss:demo/w16_42_portfolio/css

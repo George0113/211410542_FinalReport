@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../1111-sweb-demo-id/1111-sweb-demo-id"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502
+	}
+}
