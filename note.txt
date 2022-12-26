@@ -1,6 +1,4 @@
-sass  --watch demo/w16_42_portfolio/scss:demo/w16_42_portfolio/css
-
-sass  --watch demo/w6_42/scss:demo/w16_42_portfolio/css
+sass  --watch ./scss/styles_42.scss:./css/styles_42.css
 
 git remote add origin https://github.com/George0113/211410542_Final.git
 git branch -M main
