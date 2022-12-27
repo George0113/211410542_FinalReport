@@ -24,9 +24,15 @@
 ![](final-p4-2.png)
 ![](final-p4-3.png)
 
-###
+### final-P4: works
+![](final-p5-1.png)
+![](final-p5-2.png)
+![](final-p5-3.png)
 
-
+### final-P6: learning
+![](final-p6-1.png)
+![](final-p6-2.png)
+![](final-p6-3.png)
 ```
 $ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-12-19"
 76660af George0113      Tue Dec 20 17:24:06 2022 +0800  hero img
