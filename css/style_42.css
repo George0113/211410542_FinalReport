@@ -199,6 +199,10 @@ Navbar
   border-bottom: 1px solid var(--clr-grey-3);
 }
 
+.nav-logo{
+  display: grid;
+}
+
 .nav-center{
   display: flex;
   justify-content:space-around;

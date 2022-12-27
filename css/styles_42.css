@@ -342,13 +342,16 @@ Hero
   display: grid;
   min-height: calc(100vh - 4rem);
 }
+.hero-title {
+  color: #f2a104;
+}
 .hero .underline {
   margin-left: 0;
   margin-bottom: 0.5rem;
   background-color: #f2a104;
 }
 .hero .hero-info h4 {
-  color: var(--clr-grey-5);
+  color: #f2a104;
 }
 .hero-icons {
   justify-content: start;
@@ -622,16 +625,22 @@ skills
   }
 }
 .skills {
-  background-color: var(--clr-primary-9);
+  background-color: #1d65a6;
 }
 .skills-center {
   width: 80vw;
   display: grid;
   column-gap: 3rem;
 }
+.skills-title {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #f2a104;
+}
 .skills h3 {
   margin: 1.5rem 0;
-  color: var(--clr-primary-1);
+  color: #f2a104;
 }
 
 .skill {
@@ -640,7 +649,7 @@ skills
 .skill p {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
-  color: var(--clr-primary-1);
+  color: #f2a104;
 }
 .skill-container {
   background-color: var(--clr-white);
@@ -653,7 +662,7 @@ skills
   position: absolute;
   top: 0;
   left: 0;
-  background: var(--clr-primary-5);
+  background: #f2a104;
   height: 100%;
   width: 50%;
   border-radius: var(--radius);
@@ -747,7 +756,7 @@ blogs
 .blogs {
   padding: 5rem 2rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background: rgb(195, 215, 248);
+  background: #1d65a6;
   color: #3c3799;
   font-size: 12px;
 }

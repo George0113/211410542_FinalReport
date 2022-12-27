@@ -1,0 +1,5 @@
+sass  --watch ./scss/styles_42.scss:./css/styles_42.css
+
+git remote add origin https://github.com/George0113/211410542_Final.git
+git branch -M main
+git push -u origin main

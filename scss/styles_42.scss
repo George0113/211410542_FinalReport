@@ -162,6 +162,10 @@ Hero
         min-height: calc(100vh - 4rem);
     }
 
+    &-title{
+        color: #f2a104;
+    }
+
     .underline {
         margin-left: 0;
         margin-bottom: 0.5rem;
@@ -169,7 +173,7 @@ Hero
     }
 
     .hero-info h4 {
-        color: var(--clr-grey-5);
+        color: #f2a104;
     }
 
     &-icons {
@@ -300,12 +304,15 @@ Services
       -moz-column-gap: 2rem;
       column-gap: 2rem;
     }
+
   }
   @media screen and (min-width: 992px) {
     .services-center {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
+
+
 
 /*
 =============== 
@@ -497,7 +504,7 @@ skills
 }
 
 .skills {
-    background-color: var(--clr-primary-9);
+    background-color: #1d65a6;
 
     &-center{
         width: 80vw;
@@ -505,9 +512,16 @@ skills
         column-gap: 3rem;
     }
 
+    &-title{
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        color: #f2a104;
+    }
+
     h3{
         margin: 1.5rem 0;
-        color: var(--clr-primary-1);
+        color: #f2a104;
     }
 }
 
@@ -516,7 +530,7 @@ skills
     p {
         margin-bottom: 0.5rem;
         text-transform: capitalize;
-        color: var(--clr-primary-1);
+        color: #f2a104;
     }
 
     &-container {
@@ -531,7 +545,7 @@ skills
         position: absolute;
         top: 0;
         left: 0;
-        background: var(--clr-primary-5);
+        background: #f2a104;
         height: 100%;
         width: 50%;
         border-radius: var(--radius);
@@ -642,7 +656,7 @@ blogs
 .blogs {
     padding: 5rem 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background: rgb(195, 215, 248);
+    background: #1d65a6;
     color: #3c3799;
     font-size: 12px;
 
